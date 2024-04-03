@@ -1,0 +1,83 @@
+KEGIATAN 1
+Buatlah sebuah source code bertemakan sistem voting online yang memiliki atribut bernama candidates bertipe HashMap. Dalam kegiatan 1, sistem ini bisa memasukkan voting lebih dari satu. Manfaatkan library HashMap untuk mempermudah pembuatan kelas.
+Key dan value dari atribut candidates berupa nama kandidat yang bertipe string dan jumlah voting yang bertipe integer. Berikut adalah contoh output yang dihasilkan.
+
+
+CONTOH OUTPUT :
+
+Selamat datang di Sistem Voting Online
+
+Pilih kandidat yang ingin Anda dukung:
+Kandidat B
+Kandidat C
+Kandidat A
+Masukkan nama kandidat (atau ketik 'selesai' untuk keluar): Kandidat B
+Terima kasih, suara Anda telah direkam.
+
+Pilih kandidat yang ingin Anda dukung:
+Kandidat B
+Kandidat c
+Kandidat A
+Masukkan nama kandidat (atau ketik 'selesai' untuk keluar): Kandidat B
+Terima kasih, suara Anda telah direkam.
+
+Pilih kandidat yang ingin Anda dukung:
+Kandidat B
+Kandidat C
+Kandidat A
+Masukkan nama kandidat (atau ketik 'selesai' untuk keluar): Kandidat A
+Terima kasih, suara Anda telah direkam.
+
+Pilih kandidat yang ingin Anda dukung:
+Kandidat B
+Kandidat C
+Kandidat A
+Masukkan nama kandidat (atau ketik 'selesai' untuk keluar): selesai
+
+Hasil Voting:
+- Kandidat B: 2 suara
+- Kandidat C: 0 suara
+- Kandidat A: 1 suara
+
+
+KEGIATAN 2
+Setelah Anda berhasil menyelesaikan kegiatan 1, tambahkan 1 (satu) atribut baru pada kelas DataPemilih yang bernama users yang bertipe HashMap. Variabel ini akan menyimpan pasangan email dan password. Kemudian, modifikasi kegiatan 1 dengan menambahkan method Register, Login dan Logout pada kelas DataPemilih dengan spesifikasi sebagai berikut:
+
+Metode Register
+- User diminta memasukkan email, password, nama, dan nik
+- Simpan email dan password dalam satu atribut users yang bertipe hashmap
+- Simpan juga email, nama dan nik dalam satu atribut userDetails beritpe hashmap.
+- Dalam atribut userDetails gunakan email sebagai key dan arraylist yang berisi nama dan nik sebagai value.
+- Tidak boleh ada duplikat email dan nik dalam satu sistem.
+- Format email harus menggunakan “@gmail.com”
+- Jika semua ketentuan tersebut sudah terpenuhi maka tampilkan pilihan antara login atau daftar, juga tampilkan “Berhasil Mendaftar”
+- Jika semua data rules tidak terpenuhi maka kembalikan ke menu pilihan login dan daftar dan tampilkan “Gagal Login”
+
+Metode Login:
+- User diminta memasukkan email dan password
+- Sistem memeriksa apakah data email dan password sesuai dengan data yang tersimpan pada atribut users
+- Jika ada, diperiksa lagi apakah email yang dimasukkan menggunakan domain “@gmail.com”
+- Jika data tidak sesuai maka tampilkan “Gagal Login”
+- Jika data sesuai maka tampilkan “Login Berhasil” dan tampilkan juga nama dan nik dari akun yang sudah login, kemudian tampilkan pilihan kandidat nya
+
+Metode Pemilihan:
+- Satu user maksimal hanya bisa memilih satu kandidat
+
+Metode Logout:
+- User keluar dari program
+
+Berikut adalah contoh output dari program
+
+Selamat datang di Sistem Voting Online
+Pilih menu:
+1. Login
+2. Daftar
+3. Hasil Vote
+Pilihan Anda:
+
+Selamat datang di sistem voting:
+Pilih kandidat yang ingin Anda dukung:
+Kandidat B
+Kandidat c
+Kandidat A
+Masukkan nama kandidat (atau ketik 'selesai' untuk keluar):
